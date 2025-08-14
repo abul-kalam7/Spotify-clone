@@ -1,4 +1,14 @@
 console.log('Lets write JavaScript');
+ 
+const playHTML =  ` <div class="play">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>`;
+
+            document.querySelectorAll(".card").forEach( card =>{
+            card.insertAdjacentHTML('beforeend', playHTML)
+           })
 
 async function getSongs() {
     let a = await fetch("http://127.0.0.1:3000/songs/")

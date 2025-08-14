@@ -97,6 +97,7 @@ body {
     position: relative;
 }
 
+
 .card>* {
     padding-top: 10px;
 }
@@ -117,8 +118,21 @@ body {
     justify-content: center;
     position: absolute;
     right: 17px;
-    top: 168px;
+    top: 195px;
+    opacity: 0;
 
+     transition:
+    top 0.2s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.2s ease-in;
+}
+.play:hover{
+    opacity: 1;
+    background: #3ef07f;
+}
+
+.card:hover .play{
+     opacity: 0.9;
+     top: 178px;
 }
 
 .buttons>* {
