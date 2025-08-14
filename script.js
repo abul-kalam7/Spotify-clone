@@ -23,7 +23,25 @@ async function main() {
 
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
     for (const song of songs) {
-        songUL.innerHTML = songUL.innerHTML + `<li> ${song.replaceAll("%20", " ")} </li>`;
+        songUL.innerHTML = songUL.innerHTML + `<li>
+        
+        
+                <img class="invert" src="img/music.svg" alt="" srcset="">
+                <div class="info">
+                  <div> ${song.replaceAll("%20", " ")}</div>
+                  <div>Song Artist</div>
+                </div>
+                <div class="playnow">
+                  <span>Play Now</span>
+                  <img class="invert" src="img/play.svg" alt="" srcset="">
+                  
+                </div>
+             
+        
+        
+        
+        
+        </li>`;
     }
     
     //Play the first song
