@@ -1,7 +1,7 @@
 console.log('Lets write JavaScript');
  
 const playHTML =  ` <div class="play">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg">
+              <svg width="20" height="20 n" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
               </svg>
             </div>`;
@@ -54,12 +54,5 @@ async function main() {
         </li>`;
     }
     
-    //Play the first song
-    var audio = new Audio(songs[0])
-    //audio.play();
-
-    audio.addEventListener("loadeddata", () => {
-        console.log(audio.duration, audio.currentSrc, audio.currentTime);
-    })
 }
-main()
+main() 

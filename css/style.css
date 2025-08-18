@@ -179,8 +179,9 @@ body {
     filter: invert(1);
     background-color: #d6d3d3;
     padding: 12px;
-    border-radius: 9px;
+    border-radius: 10px;
     border-bottom: 0.1px solid #af8f6b;
+    height: 40px;
 }
 
 .songbuttons{
@@ -227,4 +228,25 @@ body {
 .playnow span{
     font-size: 15px;
     width: 64px;
+}
+
+.seekbar {
+    height: 2px;
+    width: 97%; 
+    border-radius: 10px;
+    background: rgb(53, 52, 52);
+    position: absolute;
+    bottom: 0px;
+    margin: 6px;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
 }
